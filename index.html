@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarah Khadder · Portfolio</title>
+<meta name="description" content="Sarah Khadder, CS student at San José State working where product, AI, and technical execution meet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Caveat:wght@500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <div class="nav ivory">
+      <a href="#top" class="brand">Sarah Khadder</a>
+      <nav aria-label="Main">
+        <a class="navlink" href="#education">Education</a>
+        <a class="navlink" href="#experience">Experience</a>
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#skills">Skills</a>
+        <a class="contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <img class="hero-bridge" src="assets/bridge.png" alt="" aria-hidden="true">
+<div style="position: relative; z-index: 2; width: min(520px, calc(100% - 48px)); flex: none; aspect-ratio: 672 / 832; filter: drop-shadow(18px 30px 40px rgba(60,45,25,.22)) drop-shadow(3px 6px 8px rgba(60,45,25,.14));">
+<img src="assets/wine-card.png" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%;">
+<div style="position: absolute; left: 11%; right: 10%; bottom: 9%; display: flex; flex-direction: column; gap: 6px; color: #F3EDE6; font-family: Geist, 'Helvetica Neue', Arial, sans-serif;">
+<h1 style="margin: 0; font-weight: 800; font-size: clamp(30px, 4.4vw, 46px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase; color: #F7F2EC;">Sarah Khadder<sup style="font-size: .32em; font-weight: 600; vertical-align: top; position: relative; top: .3em; margin-left: 2px;">®</sup></h1>
+<span style="font-size: 17px; font-weight: 400; color: #E8DCD8;">CS · San José State</span>
+<p style="margin: 10px 0 0; max-width: 340px; font-size: 13px; line-height: 1.55; color: #E3D5D2;">Building at the intersection of product and AI.</p>
+<div style="margin-top: 12px; display: grid; grid-template-columns: 70px 1fr; row-gap: 3px; font-size: 11px; letter-spacing: .04em; color: #E3D5D2;"><span style="display: contents;"><span>BASED</span><span>San José, CA</span></span><span style="display: contents;"><span>GRAD</span><span>Spring 2027</span></span><span style="display: contents;"><span>FOCUS</span><span>PM · AI · Engineering</span></span></div>
+</div>
+</div>
+
+    <figure class="polaroid">
+      <img class="photo" src="assets/headshot.jpg" alt="Headshot of Sarah">
+      <img class="frame" src="assets/polaroid-frame.png" alt="" aria-hidden="true">
+      <img class="clip" src="assets/clip.png" alt="" aria-hidden="true">
+    </figure>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="band">
+    <video class="band-video" src="assets/waves.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="band-wash" aria-hidden="true"></div>
+    <div class="band-inner">
+      <div class="section-head">
+        <h2 class="h2-sm">Education &amp; fellowships</h2>
+        <span class="caps" style="color: #2B2620; font-weight: 600;">Section 02</span>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Education groups" data-group="edu"></div>
+      <div role="tabpanel">
+        <span class="caps" id="edu-count"></span>
+        <div class="spec-table" id="edu-panel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="narrow">
+      <h2>Experience</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section wide">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <span class="caps" style="color: #2B2620; font-weight: 600;">Section 03 · Click a swatch to open</span>
+    </div>
+    <div class="swatches">
+      <div class="swatch-row" id="proj-top"></div>
+      <div class="swatch-row" id="proj-bottom"></div>
+      <div class="swatch-detail" id="proj-detail" hidden></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="band">
+    <video class="band-video" src="assets/waves.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="band-wash" aria-hidden="true"></div>
+    <div class="band-inner">
+      <div class="section-head">
+        <h2 class="h2-sm">Technical skills</h2>
+        <span class="caps" style="color: #2B2620; font-weight: 600;">Section 04</span>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Skill groups" data-group="skills"></div>
+      <div role="tabpanel">
+        <span class="caps" id="skill-count"></span>
+        <div class="skill-grid" id="skill-grid"></div>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" style="position: relative; display: flex; flex-wrap: wrap; align-items: stretch; scroll-margin-top: 100px;">
+<span style="position: absolute; z-index: 3; top: 72px; right: max(24px, calc(50% - 440px)); font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: #2B2620; font-weight: 600;">Section 05</span>
+<div class="leather" style="position: relative; flex: 1 1 340px; box-sizing: border-box; min-height: 600px; margin: 56px 0 56px clamp(24px, 5vw, 72px); padding: 56px 40px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+<div style="position: relative; z-index: 1; width: min(420px, 100%); aspect-ratio: 598 / 952; transform: rotate(-2deg); filter: drop-shadow(14px 24px 30px rgba(0,0,0,.55)) drop-shadow(2px 4px 6px rgba(0,0,0,.4));">
+<img src="assets/star-sticker.png" alt="" aria-hidden="true" style="position: absolute; z-index: 3; right: 6%; bottom: 5%; width: 30%; height: auto; transform: rotate(12deg); filter: drop-shadow(2px 4px 4px rgba(0,0,0,.3)); pointer-events: none;">
+<img src="assets/paper.png" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%;">
+<div style="position: absolute; left: 12%; right: 12%; top: 9%; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-family: 'Pinyon Script', cursive; font-size: clamp(46px, 5.4vw, 64px); line-height: 1.1; color: #1E1A16;">Let&#39;s talk.</span>
+<div style="margin-top: 18px; display: flex; flex-direction: column;">
+<a href="mailto:sarahkhadder@gmail.com" aria-label="Email: sarahkhadder@gmail.com" class="mono" style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(43,38,32,.15); font-size: 14px; font-weight: 600; color: #1E1A16; text-decoration: none; overflow-wrap: anywhere;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3.5 6l8.5 7 8.5-7"></path></svg>sarahkhadder@gmail.com</a>
+<a href="https://www.linkedin.com/in/sarah-khadder-ba1590325/" aria-label="LinkedIn: linkedin.com/in/sarah-khadder" class="mono" style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(43,38,32,.15); font-size: 14px; font-weight: 600; color: #1E1A16; text-decoration: none; overflow-wrap: anywhere;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2.5"></rect><path d="M8 10.5V17M8 7.2v.1M12 17v-6.5M12 13.5c0-2 1.3-3 2.7-3s2.3 1 2.3 3V17"></path></svg>linkedin.com/in/sarah-khadder</a>
+<a href="https://github.com/skhadder" aria-label="GitHub: github.com/skhadder" class="mono" style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(43,38,32,.15); font-size: 14px; font-weight: 600; color: #1E1A16; text-decoration: none; overflow-wrap: anywhere;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 19c-4 1.5-4-2-6-2.5M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"></path></svg>github.com/skhadder</a>
+</div>
+<p style="margin: 22px 0 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 21px; line-height: 1.35; color: #1E1A16;">Open to internships, product and AI projects, and good conversations :)</p>
+<span class="mono" style="display: block; margin-top: 8px; font-size: 12px; color: #6B6052;">San José, CA</span>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; box-sizing: border-box; min-height: 600px; padding: 72px 0 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 40px;">
+<img src="assets/bridge.png" alt="Golden Gate Bridge" style="display: block; position: relative; z-index: 2; width: 100%; height: auto; opacity: .95;">
+</div>
+</section>
+</div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
